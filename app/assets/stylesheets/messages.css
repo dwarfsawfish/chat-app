@@ -1,22 +1,60 @@
 .wrapper {
   display: flex;
 }
+
+/***********サイドバーの装飾**********/
+
 .side-bar {
   background-color: #253141;
   width: 300px;
   height: 100vh;
 }
 
+
 .side-bar-header {
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
+.user_name a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #FAFAFA;
+}
+
+
+.create_room a{
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+  padding: 14px;
+  border: 1px solid lightblue;
+}
+
+/***********チャンネルリストの装飾**********/
 
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+  overflow: scroll;
 }
+
+.room{
+  padding: 20px 0 40px;
+}
+
+.room_name a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/***********チャット画面の装飾**********/
 
 .chat {
   background-color: #FFFFFF;
